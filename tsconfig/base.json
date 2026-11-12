@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Strict base (bundler, type-check only)",
+  "compilerOptions": {
+    // Language and environment
+    "target": "ES2024",
+    "lib": ["ES2024"],
+    "moduleDetection": "force",
+
+    // Modules: a bundler resolves and emits, TypeScript only checks
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "noUncheckedSideEffectImports": true,
+
+    // Each file must be transpilable on its own, by any tool
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "erasableSyntaxOnly": true,
+
+    // Strictness
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "forceConsistentCasingInFileNames": true,
+
+    // Output
+    "noEmit": true,
+    "skipLibCheck": true
+  }
+}

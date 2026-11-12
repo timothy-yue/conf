@@ -1,0 +1,19 @@
+{
+  "name": "@tim/fixture-react-app",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Consumer fixture: integrates @tim/config exactly the way a real project would.",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tim/config": "workspace:*",
+    "@types/react": "^19.3.0",
+    "eslint": "^10.14.0",
+    "prettier": "^3.10.0",
+    "react": "^19.3.1",
+    "typescript": "~6.0.3"
+  }
+}

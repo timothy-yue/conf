@@ -1,0 +1,4 @@
+pnpm-lock.yaml
+
+# Deliberately unformatted: input for the Prettier integration test.
+tests/fixtures/prettier/input.tsx
