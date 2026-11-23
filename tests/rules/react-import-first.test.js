@@ -12,7 +12,9 @@ RuleTester.itOnly = it.only;
 const errors = [{ messageId: "notFirst" }];
 
 /** @param {string[]} lines */
-const code = (...lines) => lines.join("\n");
+function code(...lines) {
+  return lines.join("\n");
+}
 
 const valid = [
   {

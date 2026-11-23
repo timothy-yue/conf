@@ -62,6 +62,7 @@ export const base = defineConfig(
       // Consistency
       curly: ["error", "all"],
       "default-case-last": "error",
+      "func-style": ["error", "declaration"],
       "no-else-return": ["error", { allowElseIf: false }],
       "no-lonely-if": "error",
       "no-nested-ternary": "error",

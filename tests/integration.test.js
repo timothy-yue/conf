@@ -82,6 +82,16 @@ describe("fixture: react-app", () => {
         assert.ok(ruleIds.has(expected), `expected ${expected}, got ${[...ruleIds].join(", ")}`);
       }
     });
+
+    it("reports function expressions bound to names and as callbacks", async () => {
+      const results = await lintFixture(["src/invalid/function-style.ts"]);
+
+      assert.deepEqual(ruleIdsFor(results, "function-style.ts"), [
+        "func-style",
+        "func-style",
+        "prefer-arrow-callback",
+      ]);
+    });
   });
 
   describe("typescript", () => {
